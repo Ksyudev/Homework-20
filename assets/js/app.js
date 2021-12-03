@@ -38,8 +38,8 @@ function checkNumber()
             attemptsOutput.innerHTML= `Поздравляю!`;
             return;}
         else 
-            {attemptsOutput.innerHTML= `Игра окончена`;
-             result.innerHTML = '';
+            {attemptsOutput.innerHTML= ` Игра окончена`;
+             result.innerHTML = 'К сожалению, Вы не угадали.';
              document.getElementById('numberInput').value='';
              return;}          
     }  
