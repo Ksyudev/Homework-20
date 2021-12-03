@@ -41,8 +41,9 @@ if (document.getElementById('numberInput').value!='')
             return;}
         else 
             {attemptsOutput.innerHTML= ` Игра окончена`;
-             result.innerHTML = 'К сожалению, Вы не угадали.';
+             result.innerHTML = `Правильный ответ: ${secret}`;
              document.getElementById('numberInput').value='';
+             console.log(`secret ${secret}`);
              return;}          
     }  
 }  
