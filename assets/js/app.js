@@ -17,7 +17,9 @@ function checkNumber()
 {   
     let tryNumber = document.getElementById('numberInput').value; 
     let result = document.getElementById('advicePlace');
-    chekCount();
+if (document.getElementById('numberInput').value!='')
+
+{    chekCount();
     if (count>=1) 
     {
         {if (secret==tryNumber)
@@ -43,6 +45,10 @@ function checkNumber()
              document.getElementById('numberInput').value='';
              return;}          
     }  
+}  
+
+else 
+{result.innerHTML = 'Введите число';}
 }
 
 
